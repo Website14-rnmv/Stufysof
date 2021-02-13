@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+$celeste : #56CCF2;
+$plomolight : rgb(136, 136, 136);
+$rojobajo: #EB5757; 
+$azul: #007BFF;
+
+.contenedor{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    
+
+}
+
+/*Cuerpo*/
+@import 'header';
+@import 'informacion';
+@import 'cuadroAcordion';
+@import 'especialTorta';
+@import 'integrantes';
+@import 'footer';
+
+
+/*Reponsive 600px*/
+@import 'media600px';

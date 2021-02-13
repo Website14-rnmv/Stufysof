@@ -1,0 +1,235 @@
+@media screen and (max-width: 600px){
+    
+    .fondo{
+        height: 50vh;
+    }
+    .nav-menu{
+        position: absolute;
+        top: 0;
+        background-color: white;
+        z-index: 1;
+    }
+    .list-anclas{
+        display: flex;
+        position: absolute;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+        height: 100vh;
+        top: 70%;
+        background-color: rgba(255, 255, 255, 0.897);
+        left: 0;
+        padding: 20px 0 0 30px ;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0px);
+        .items{
+            font-size: 15px;  
+            border-bottom: 1px solid #ccc;  
+        }
+        .items::before{
+           display: none;
+        }
+        .comprar{
+            width: 80%;
+            margin: 0;
+            text-align: center;
+            order: -5;
+        }
+    }
+    .list-anclas.show{
+        transform: translateX(-400px);
+        
+    }
+    .list-anclas{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px 0;
+        li { 
+            margin: 20px 0;
+        }
+        
+    }
+    .bloque1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        width: 100%;
+        
+    }
+
+    .boton{
+        z-index: 1;
+        color:$plomolight;
+        display: block;
+        i{
+            font-size: 25px;
+           
+        }
+    }
+
+    .texto{
+        width: 30%;
+        top: 20%;
+        right: 10%;
+    
+        h1{
+           
+            font-size: 15px;
+        }
+        p{
+            font-size: 7px;
+            
+        }
+        a{
+            font-size: 13px ;
+            padding: 5px ;
+            
+        }
+        
+        
+    }
+
+    /*----------------------------------------INFORMACION--------------------------------------*/
+     .titulo-info{
+         h4{
+             font-size: 18px;
+             margin: 5% 0 0% 0 ;
+         }
+         p{
+             font-size: 13px;
+         }
+         p::before{
+           display: none;
+        }
+     }
+    .widgets{
+       
+        flex-direction: column;
+        padding:0 5%;
+        .wid{
+            margin: 0;
+            padding: 0;
+        
+            i{
+                margin:5%  0;
+            }
+            h4{
+                margin: 4%;
+            }
+        }
+    }
+
+        /*----------------------------------------ESPCIAL MES TORTA--------------------------------------*/
+
+        .especial-torta{
+    
+    width: 100%;
+    padding: 8% 10%;
+    margin:0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.text-torta{
+    width: 50%;
+    margin: 0px 10% 0 0;
+    h3{
+        display: inline-block;
+        color: $rojobajo;
+        padding: 5px 15px;
+        border-left: 4px solid $rojobajo;
+        text-transform: uppercase;
+    }
+    p{
+        font-size: 15px;
+        margin: 5% 0;
+        text-align: justify;
+
+    }
+    li{
+        font-style: italic;
+        font-weight: 400;
+    }
+.redes{
+    li i{
+        margin: 0 5px;
+        color: $plomolight;
+    }
+    li i:hover{
+        color: $celeste;
+        transition:.5s;
+    }
+}
+.torta{
+    width: 100%;
+    
+}
+
+}
+
+/*------------------------------------------ESPCIAL MES TORTA----------------------------------*/
+.especial-torta{
+    
+    width: 100%;
+    padding:10%;
+    flex-direction: column;
+}
+.text-torta{
+    width:100%;
+    margin: 0;
+    order:1;
+    h3{
+        display: block;
+        text-align: center;
+        padding: 5px;
+        border-left: none;
+        margin: 5% 0;
+    }
+    
+.torta{
+    width: 100%;
+    
+}
+
+}
+
+/*------------------------------------------INTEGRANTES----------------------------------*/
+.content-info{
+    padding: 2%;
+    
+}
+.wid-integrantes{
+    flex-direction: column;
+}
+
+
+/*------------------------------------------FOOTER----------------------------------*/
+
+footer{
+    
+    padding: 5% 0;
+    .anclas-foot{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+        .group{
+            margin:  20px;
+            h5{
+                font-size: 16px;
+            }
+            a{
+                font-size: 12px;
+            }
+        }
+        
+    }
+}
+
+}

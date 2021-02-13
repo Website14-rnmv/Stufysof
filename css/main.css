@@ -1,0 +1,595 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contenedor {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+
+/*Cuerpo*/
+/*-----------------------------------------------CABECERA------------------------------*/
+.logo2 {
+  display: none;
+}
+
+.boton {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-menu {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12%;
+}
+
+.fondo {
+  width: 100%;
+  height: 100vh;
+}
+.fondo img {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.logo img {
+  position: relative;
+  width: 100px;
+  z-index: 1;
+}
+
+.list-anclas {
+  display: flex;
+  align-items: center;
+  margin: 13px 0 0 0;
+  position: relative;
+}
+.list-anclas li {
+  margin: 0 15px;
+  display: inline-block;
+  position: relative;
+}
+.list-anclas .items {
+  display: inline-block;
+  color: #464646;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 0;
+  margin: 0 0;
+}
+.list-anclas .comprar {
+  font-size: 13px;
+  margin: 0px 20px;
+  color: white;
+  font-weight: 600;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #56CCF2;
+  text-decoration: none;
+}
+.list-anclas .items:hover {
+  color: #56CCF2;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.list-anclas .items::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  background-color: #56CCF2;
+  left: 0;
+}
+.list-anclas .items:hover::before {
+  transition: 0.5s;
+  width: 100%;
+}
+
+.texto {
+  width: 40%;
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  text-align: center;
+}
+.texto h1 {
+  color: #56CCF2;
+  font-size: 30px;
+  font-weight: 700;
+}
+.texto p {
+  color: #888888;
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.texto a {
+  display: inline-block;
+  border: 1px solid #56CCF2;
+  border-radius: 10px;
+  padding: 10px 40px;
+  color: #56CCF2;
+}
+.texto a:hover {
+  background-color: #56CCF2;
+  color: white;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+/*-----------------------------------------------INFORMACION------------------------------------------*/
+.content-info {
+  width: 100%;
+  background-color: white;
+  padding: 8% 12%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titulo-info {
+  text-align: center;
+  margin: 0 0 10% 0;
+  position: relative;
+}
+.titulo-info h4 {
+  font-size: 25px;
+  padding: 5px;
+  color: #007BFF;
+}
+.titulo-info p {
+  font-weight: 300;
+}
+.titulo-info p::before {
+  content: "";
+  position: absolute;
+  background-color: #007BFF;
+  width: 55px;
+  height: 2px;
+  bottom: -10px;
+  left: 45%;
+}
+
+.widgets {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wid {
+  width: 100%;
+  text-align: center;
+  margin: 0 5%;
+}
+.wid i {
+  display: inline-block;
+  padding: 15px;
+  font-size: 35px;
+  margin: 10% 0;
+  color: #56CCF2;
+}
+.wid h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5% 0;
+}
+.wid p {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/*-----------------------------------------------MENCIONES LIST------------------------------------------*/
+.menciones {
+  width: 100%;
+  padding: 8% 10%;
+  margin: 0;
+}
+.menciones .info-menciones {
+  width: 100%;
+  position: relative;
+}
+.menciones .info-menciones h4 {
+  color: black;
+  font-size: 25px;
+}
+.menciones .info-menciones p {
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: justify;
+}
+.menciones .info-menciones .botonMenciones {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px;
+  float: right;
+  color: white;
+  font-size: 12px;
+  background-color: #56CCF2;
+  border-radius: 5px;
+}
+.menciones .list-cambios:focus {
+  transition: 0.5s;
+}
+
+/*-----------------------------------------------CONTACTO-----------------------------------------*/
+.content-contact {
+  margin: 20px 0;
+}
+.content-contact h4 {
+  margin: 5px 0;
+}
+.content-contact .telefono {
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+}
+.content-contact .telefono p {
+  color: #888888;
+}
+.content-contact .redes-sociales2 a {
+  color: #888888;
+  margin: 0 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.content-contact .engloba {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5%;
+}
+
+/*-----------------------------------------------ESPECIAL DEL MES TORTA------------------------------------------*/
+.especial-torta {
+  width: 100%;
+  padding: 8% 10%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.text-torta {
+  width: 50%;
+  margin: 0px 10% 0 0;
+}
+.text-torta h3 {
+  display: inline-block;
+  color: #007BFF;
+  padding: 5px 15px;
+  border-left: 4px solid #007BFF;
+  text-transform: uppercase;
+}
+.text-torta p {
+  font-size: 15px;
+  margin: 5% 0;
+  text-align: justify;
+}
+.text-torta li {
+  font-style: italic;
+  font-weight: 400;
+}
+.text-torta .redes li i {
+  margin: 0 5px;
+  color: #888888;
+}
+.text-torta .redes li i:hover {
+  color: #56CCF2;
+  transition: 0.5s;
+}
+.text-torta .torta {
+  width: 100%;
+}
+
+/*-----------------------------------------------INTEGRANTES DE LA EMPRESA-----------------------------------------*/
+.personal {
+  width: 100%;
+  padding: 8% 10%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.personal .title-personal {
+  text-align: center;
+}
+.personal .title-personal h4 {
+  font-size: 25px;
+  padding: 5px;
+  color: black;
+}
+.personal .title-personal p {
+  font-weight: 300;
+}
+.personal .wid-integrantes {
+  width: 100%;
+  margin: 5% 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.personal .wid-integrantes .wid-int {
+  margin: 10px 20px;
+  text-align: center;
+}
+.personal .wid-integrantes .wid-int h5 {
+  font-size: 16px;
+}
+.personal .wid-integrantes .wid-int p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/*-----------------------------------------------FOOTER-----------------------------------------*/
+footer {
+  width: 100%;
+  padding: 3%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .anclas-foot {
+  display: flex;
+  justify-content: space-between;
+}
+footer .anclas-foot ul {
+  display: flex;
+  flex-direction: column;
+}
+footer .anclas-foot .group {
+  margin: 0 20px;
+}
+footer .anclas-foot .group h5 {
+  font-size: 16px;
+}
+footer .anclas-foot .group a {
+  font-size: 12px;
+}
+footer .anclas-foot .group3 {
+  text-align: center;
+}
+footer .anclas-foot .group3 li i {
+  margin: 5px 0;
+  font-size: 30px;
+}
+footer .anclas-foot .logo-foot {
+  text-align: center;
+}
+footer .anclas-foot .logo-foot p {
+  font-size: 10px;
+}
+
+/*Reponsive 600px*/
+@media screen and (max-width: 600px) {
+  .fondo {
+    height: 50vh;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+  }
+
+  .list-anclas {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: 100vh;
+    top: 70%;
+    background-color: rgba(255, 255, 255, 0.897);
+    left: 0;
+    padding: 20px 0 0 30px;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0px);
+  }
+  .list-anclas .items {
+    font-size: 15px;
+    border-bottom: 1px solid #ccc;
+  }
+  .list-anclas .items::before {
+    display: none;
+  }
+  .list-anclas .comprar {
+    width: 80%;
+    margin: 0;
+    text-align: center;
+    order: -5;
+  }
+
+  .list-anclas.show {
+    transform: translateX(-400px);
+  }
+
+  .list-anclas {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+  .list-anclas li {
+    margin: 20px 0;
+  }
+
+  .bloque1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+  }
+
+  .boton {
+    z-index: 1;
+    color: #888888;
+    display: block;
+  }
+  .boton i {
+    font-size: 25px;
+  }
+
+  .texto {
+    width: 30%;
+    top: 20%;
+    right: 10%;
+  }
+  .texto h1 {
+    font-size: 15px;
+  }
+  .texto p {
+    font-size: 7px;
+  }
+  .texto a {
+    font-size: 13px;
+    padding: 5px;
+  }
+
+  /*----------------------------------------INFORMACION--------------------------------------*/
+  .titulo-info h4 {
+    font-size: 18px;
+    margin: 5% 0 0% 0;
+  }
+  .titulo-info p {
+    font-size: 13px;
+  }
+  .titulo-info p::before {
+    display: none;
+  }
+
+  .widgets {
+    flex-direction: column;
+    padding: 0 5%;
+  }
+  .widgets .wid {
+    margin: 0;
+    padding: 0;
+  }
+  .widgets .wid i {
+    margin: 5% 0;
+  }
+  .widgets .wid h4 {
+    margin: 4%;
+  }
+
+  /*----------------------------------------ESPCIAL MES TORTA--------------------------------------*/
+  .especial-torta {
+    width: 100%;
+    padding: 8% 10%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .text-torta {
+    width: 50%;
+    margin: 0px 10% 0 0;
+  }
+  .text-torta h3 {
+    display: inline-block;
+    color: #EB5757;
+    padding: 5px 15px;
+    border-left: 4px solid #EB5757;
+    text-transform: uppercase;
+  }
+  .text-torta p {
+    font-size: 15px;
+    margin: 5% 0;
+    text-align: justify;
+  }
+  .text-torta li {
+    font-style: italic;
+    font-weight: 400;
+  }
+  .text-torta .redes li i {
+    margin: 0 5px;
+    color: #888888;
+  }
+  .text-torta .redes li i:hover {
+    color: #56CCF2;
+    transition: 0.5s;
+  }
+  .text-torta .torta {
+    width: 100%;
+  }
+
+  /*------------------------------------------ESPCIAL MES TORTA----------------------------------*/
+  .especial-torta {
+    width: 100%;
+    padding: 10%;
+    flex-direction: column;
+  }
+
+  .text-torta {
+    width: 100%;
+    margin: 0;
+    order: 1;
+  }
+  .text-torta h3 {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    border-left: none;
+    margin: 5% 0;
+  }
+  .text-torta .torta {
+    width: 100%;
+  }
+
+  /*------------------------------------------INTEGRANTES----------------------------------*/
+  .content-info {
+    padding: 2%;
+  }
+
+  .wid-integrantes {
+    flex-direction: column;
+  }
+
+  /*------------------------------------------FOOTER----------------------------------*/
+  footer {
+    padding: 5% 0;
+  }
+  footer .anclas-foot {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .anclas-foot ul {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .anclas-foot .group {
+    margin: 20px;
+  }
+  footer .anclas-foot .group h5 {
+    font-size: 16px;
+  }
+  footer .anclas-foot .group a {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

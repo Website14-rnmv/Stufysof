@@ -1,0 +1,43 @@
+
+/*-----------------------------------------------FOOTER-----------------------------------------*/
+footer{
+    width: 100%;
+    padding: 3%;
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .anclas-foot{
+        display: flex;
+        justify-content: space-between;
+        
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+        .group{
+            margin: 0 20px;
+            h5{
+                font-size: 16px;
+            }
+            a{
+                font-size: 12px;
+            }
+        }
+        .group3{
+            text-align: center;
+            li i{
+                margin: 5px 0;
+              font-size: 30px;
+            }
+        }
+        .logo-foot {
+            text-align: center;
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+}
+

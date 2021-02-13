@@ -1,0 +1,47 @@
+
+/*-----------------------------------------------INTEGRANTES DE LA EMPRESA-----------------------------------------*/
+.personal{
+    width: 100%;
+    padding: 8% 10%;
+    margin:0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+
+    .title-personal{
+        text-align: center;
+        h4{
+            font-size: 25px;
+            padding: 5px;
+            color: black;
+        }
+        p{
+            font-weight: 300;
+        }
+    }
+    .wid-integrantes{
+        width: 100%;
+        margin: 5% 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        
+        .wid-int{
+            
+            margin: 10px 20px;
+            text-align: center;
+            
+            
+            h5{
+                font-size: 16px;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 300;
+                
+            }
+            
+        }
+    }
+}
